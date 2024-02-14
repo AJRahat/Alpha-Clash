@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Clash</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-white">
+    <main class="min-h-screen bg-[#000435] bg-[url('./images/background.png')] bg-no-repeat bg-center">
+        <!-- -----------Home -->
+        <section id="home-container" class="">
+            <div class="text-center space-y-10 pt-[18%]">
+                <h1 class="uppercase font-extrabold text-7xl">alphabet Clash</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press "Enter" to Play</p>
+                <button id="playNowBtn" class="btn font-bold text-xl">Play Now</button>
+            </div>
+        </section>
+        <!-- -----------PlayGround -->
+        <section id="playground-container" class="hidden flex flex-col justify-center items-center min-h-screen space-y-10">
+            <!-- Screen -->
+            <div class="artboard artboard-horizontal phone-6 mb-10 border-8 border-gray-800 rounded-xl bg-[#fff]/75">
+                <div class="flex justify-center">
+                    <span class="bg-gray-800 px-4 pb-4 rounded-b-xl">Don't watch keyboard while playing...</span>
+                </div>
+                <h1 id="screen" class="text-black font-bold text-8xl text-center pt-16 uppercase">y</h1>
+            </div>
+            <!-- keyboard -->
+            <div class="text-black font-semibold">
+                <div class="flex justify-center gap-2 my-2 w-full">
+                    <kbd id="q" class="kbd">q</kbd>
+                    <kbd id="w" class="kbd">w</kbd>
+                    <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="r" class="kbd">r</kbd>
+                    <kbd id="t" class="kbd">t</kbd>
+                    <kbd id="y" class="kbd">y</kbd>
+                    <kbd id="u" class="kbd">u</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
+                    <kbd id="o" class="kbd">o</kbd>
+                    <kbd id="p" class="kbd">p</kbd>
+                </div>
+                <div class="flex justify-center gap-2 my-2 w-full">
+                    <kbd id="a" class="kbd">a</kbd>
+                    <kbd id="s" class="kbd">s</kbd>
+                    <kbd id="d" class="kbd">d</kbd>
+                    <kbd id="f" class="kbd">f</kbd>
+                    <kbd id="g" class="kbd">g</kbd>
+                    <kbd id="h" class="kbd">h</kbd>
+                    <kbd id="j" class="kbd">j</kbd>
+                    <kbd id="k" class="kbd">k</kbd>
+                    <kbd id="l" class="kbd">l</kbd>
+                </div>
+                <div class="flex justify-center gap-2 my-2 w-full">
+                    <kbd id="z" class="kbd">z</kbd>
+                    <kbd id="x" class="kbd">x</kbd>
+                    <kbd id="c" class="kbd">c</kbd>
+                    <kbd id="v" class="kbd">v</kbd>
+                    <kbd id="b" class="kbd">b</kbd>
+                    <kbd id="n" class="kbd">n</kbd>
+                    <kbd id="m" class="kbd">m</kbd>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="flex gap-96">
+                <button class="btn px-4 rounded-full">Life <span id="life">5</span></button>
+                <button class="btn px-4 rounded-full">Score <span id="score">0</span></button>
+            </div>
+        </section>
+        <!-- -----------ScoreBoard -->
+        <section id="score-container" class="hidden flex justify-center pt-[20%]">
+            <div class="space-y-5 text-center bg-violet-400 w-2/12 rounded-xl">
+                <h1 class="font-extrabold text-5xl">Score : <span id="final-score" class="font-medium">14</span></h1>
+                <button id="play-again-btn" class="btn font-bold text-lg">Play Again</button>
+                <p>Practice will make you pro</p>
+            </div>
+        </section>
+    </main>
+    <script src="script/utility.js"></script>
+    <script src="script/play.js"></script>
+</body>
+
+</html>
